@@ -12,7 +12,7 @@ const runCommand = (command) => {
   return true;
 };
 
-const repoName = "ddd" || process.argv[2];
+const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/yogain123/Drum-Kit ${repoName}`;
 const installDepsCommand = `cd ${repoName} && npm install`;
 
